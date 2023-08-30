@@ -94,9 +94,9 @@ const QuizList=[
     {
         id:8,
         question:"'xxx.js'라는 외부 스크립트를 참조하는 올바른 구문은 무엇인가요?",
-        answer:"<script scr='xxx.js'>",
+        answer:"<script src='xxx.js'>",
         view:{
-            number1:"<script scr='xxx.js'>",
+            number1:"<script src='xxx.js'>",
             number2:"<script href='xxx.js'>",
             number3:"<script name='xxx.js'>",
             number4:"<script source='xxx.js'>"
