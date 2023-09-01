@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-function Main({userName, ChangeEvent,quizList,quiz, selected}) { //userName는 props 넘기는 데이터임
+function Main({userName, ChangeEvent, quizList, quiz, selected, quizCnt}) { //userName는 props 넘기는 데이터임
   
   let navigate = useNavigate(); 
   
@@ -48,7 +48,7 @@ function Main({userName, ChangeEvent,quizList,quiz, selected}) { //userName는 p
             <button className="btn-primary text-sm sm:text-base bg-green-800 hover:bg-green-700 focus:ring-green-400 basis-5/12 my-5">갯수설정</button>
               <select className='cnt border rounded basis-6/12 text-center py-1.5' onChange={ChangeEvent} defaultValue={selected}>
                {// 데이터에 있는 값은 없는 length 만큼 배열이 만들어짐
-                Array(quizList.length).fill().map((e,i)=>{
+                Array(quizCnt).fill().map((e,i)=>{ //0901-1  quiz.length -> quizCnt로 변경하기 
                   return <option value={i+1} key={i}>{i+1}문제</option>
                 })
                 
