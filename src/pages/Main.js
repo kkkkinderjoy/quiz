@@ -24,7 +24,7 @@ function Main({userName, ChangeEvent, quizList, quiz, selected, quizCnt}) { //us
   
   return (
     <>
-    {userName}
+    {/* {userName} */}
     <div className='w-full flex items-center h-full'>
       <div className='mx-auto basis-11/12 lg:basis-10/12'>
         <div className='bg-white rounded-lg p-5 pb-0'>

@@ -77,7 +77,7 @@ function App() {
     }).length);
    
   },[typeTxt,selected])
-  console.log(quizList)
+  // console.log(quizList)
 
   
 
